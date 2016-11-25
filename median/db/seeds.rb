@@ -6,5 +6,5 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 (1..10).to_a.each do |i|
-  Article.create(text: Faker::Lorem.paragraphs((5..10).to_a.sample).join("\n"))
+  Article.create(text: Faker::Lorem.paragraphs(10).join("\n"))
 end
